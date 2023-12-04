@@ -1,4 +1,4 @@
-name: Azure Python 3.12.0
+name: AWS 3.12.0
 on: [push]
 jobs:
   build:
@@ -11,10 +11,4 @@ jobs:
         python-version: 3.12.0
     - name: Install dependencies
       run: |
-        make install
-    - name: Lint
-      run: |
-        make lint
-    - name: Test
-      run: |
-        make test
+        make install-aws
